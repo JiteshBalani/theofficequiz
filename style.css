@@ -10,6 +10,33 @@ body {
     font-family: 'Zilla Slab', serif;
 }
 
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #121212;
+    z-index: 9999;
+}
+
+.loader img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+     animation: spin 1s linear infinite; 
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 .container {
     width: 100vw;
     height: 100vh;
@@ -17,7 +44,7 @@ body {
 }
 
 .contestantContainer {
-    display: block;
+    display: none;
 }
 
 .contestantContainerChange {
@@ -352,15 +379,15 @@ body {
         margin: auto;
     }
 
-    .question{
+    .question {
         width: 70vw;
     }
 
-    .scoreAndNext{
+    .scoreAndNext {
         width: 70vw;
     }
 
-    .finish{
+    .finish {
         width: 70vw;
     }
 }
