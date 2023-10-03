@@ -90,6 +90,21 @@ const questions = [
         ]
     }
 ];
+document.addEventListener('DOMContentLoaded', function () {
+    // Show the loader
+    let loader = document.querySelector('.loader');
+    loader.style.display = 'block';
+
+    // Set a minimum display time for the loader (e.g., 2 seconds)
+    let minDisplayTime = 2000; // 2 seconds
+
+    // Hide the loader after the minimum display time
+    setTimeout(function () {
+        loader.style.display = 'none';
+        contestantContainer.style.display = 'block'
+    }, minDisplayTime);
+});
+
 
 
 const contestantContainer = document.querySelector('.contestantContainer');
