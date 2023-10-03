@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Office Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Merriweather:wght@300&family=Poppins:wght@300&family=Raleway:wght@300;500&family=Zilla+Slab:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="Images/png-transparent-man-wearing-eyeglasses-illustration-rainn-wilson-dwight-schrute-the-office-jim-halpert-television-dwight-face-head-office-thumbnail.png">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="contestantContainer">
+            <div class="contestant">
+                <form>
+                    <label for="name">
+                        <h2>What's your name?</h2>
+                    </label>
+                    <input id="name" type="text" placeholder="Type your name" autocomplete="given-name"><br>
+                    <button id="ready">Quiz Me</button>
+                </form>
+            </div>
+        </div>
+        <div class="qnaContainer">
+            <div class="quiz">
+                <div class="question">
+                    <div class="quiz-heading">
+                        <img src="Images/dwightface.png">
+                        <h1>The Office Quiz</h1><img src="Images/dwightface.png">
+                    </div>
+                    <h2 id="question"></h2>
+                    <div id="option">
+                        <!-- <button class="btn">Michael Scott</button>
+                        <button class="btn">Dwight Schrute</button>
+                        <button class="btn">Jim Halpert</button>
+                        <button class="btn">Pam Beesly</button> -->
+                    </div>
+                </div>
+                <div class="scoreAndNext">
+                    <button class="scoreBtn">Score: <span id="currentScore"></span> / 10</button>
+                    <h2>Player: <span id="playerName"></span></h2>
+                    <button id="nextBtn">Next</button>
+                </div>
+                <div class="finish">
+                    <div class="quiz-heading">
+                        <img src="Images/dwightface.png">
+                        <h1>Quiz Finished</h1><img src="Images/dwightface.png">
+                    </div>
+                    <h2 class="result">Your score is 7 / 10. Your reward is Kevin's famous Chilli.&#128516;</h2>
+                    <img id="result" src="Images/kevin-famous-chilli.webp">
+                    <button id="playAgain" onclick="refreshPage()">Play Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

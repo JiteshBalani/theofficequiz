@@ -1,0 +1,351 @@
+html {
+    background-color: #121212;
+}
+
+body {
+    /* background-image: url(https://i.redd.it/du3fu21alzh41.png); */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Zilla Slab', serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #121212;
+}
+
+.contestantContainer {
+    display: block;
+}
+
+.contestantContainerChange {
+    display: none;
+}
+
+.contestant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 40%;
+    padding: 1%;
+    background-color: #ac3131;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.contestant form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contestant form h2 {
+    color: white;
+}
+
+#name {
+    font-size: 22px;
+    font-family: 'Zilla Slab', serif;
+    margin: 5px;
+    padding: 5px 15px;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.name::placeholder {
+    color: black;
+}
+
+#ready {
+    background-color: #121212;
+    color: white;
+    font-size: 20px;
+    font-family: 'Zilla Slab', serif;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.qnaContainer {
+    display: none;
+    margin: 10% 30%;
+    /* position: relative; */
+}
+
+.qnaContainerChange {
+    display: block;
+    margin: 10% 30%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #ac3131 5px solid;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.quiz-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.quiz-heading img {
+    height: 50px;
+}
+
+.question .quiz-heading h1 {
+    display: inline-block;
+    background-color: #ac3131;
+    padding: 0px 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+#question {
+    padding: 0px 15px;
+}
+
+#option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    cursor: pointer;
+    max-width: 300px;
+    min-width: 260px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background-color: black;
+    color: white;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+.scoreAndNext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid #ac3131;
+    border-top: none;
+    border-radius: 10px;
+    margin: none;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.scoreAndNext h2 {
+    margin: 10px;
+}
+
+.scoreBtn {
+    background-color: transparent;
+    color: #ac3131;
+    width: 125px;
+    margin: 5px 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#playerName {
+    color: #ac3131;
+}
+
+#nextBtn {
+    background-color: #ac3131;
+    color: white;
+    cursor: pointer;
+    width: 120px;
+    margin: 5px 20px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
+    display: none;
+}
+
+.correct {
+    background-color: #9EE0BB;
+}
+
+.incorrect {
+    background-color: #FF9B91;
+}
+
+.finish {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #ac3131 5px solid;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.finish h1 {
+    display: inline-block;
+    background-color: #ac3131;
+    padding: 0px 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.result {
+    text-align: center;
+    font-size: 25px;
+    padding: 0px 15px;
+}
+
+#result {
+    width: 300px;
+    height: 200px;
+}
+
+#playAgain {
+    background-color: #ac3131;
+    color: white;
+    cursor: pointer;
+    width: 120px;
+    margin: 10px 20px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
+    display: block;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 500px) and (min-width: 340px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contestant {
+        width: 100%;
+        margin: auto;
+    }
+
+    #name {
+        width: 80%;
+    }
+
+    .question {
+        /* display: block; */
+        width: 100vw;
+        height: 70vh;
+        margin: none;
+        border: 2px solid #ac3131;
+
+    }
+
+    .quiz-heading {
+        font-size: 12px;
+        width: 65%;
+    }
+
+    .question .quiz-heading h1 {
+        padding: 0px 5px;
+        text-align: center;
+    }
+
+    #question {
+        text-align: center;
+        font-size: 25px;
+        padding: 0px 5px;
+        padding-bottom: 5px;
+    }
+
+    .scoreAndNext {
+        width: 100vw;
+        border: 2px solid #ac3131;
+
+    }
+
+    #option {
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .btn {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    /* #nextBtn{
+        width: 65.89px;
+        height: 62px;
+    } */
+}
+
+/*Tablet Styles*/
+@media screen and (min-width: 500px) and (max-width:950px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contestant {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/*Laptop and Desktop Styles*/
+@media screen and (max-width: 1920px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contestant {
+        width: 100%;
+        margin: auto;
+    }
+}
