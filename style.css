@@ -10,33 +10,6 @@ body {
     font-family: 'Zilla Slab', serif;
 }
 
-.loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #121212;
-    z-index: 9999;
-}
-
-.loader img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-     animation: spin 2s linear infinite; 
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-
 .container {
     width: 100vw;
     height: 100vh;
@@ -44,7 +17,7 @@ body {
 }
 
 .contestantContainer {
-    display: none;
+    display: block;
 }
 
 .contestantContainerChange {
@@ -320,7 +293,7 @@ body {
 
     #question {
         text-align: center;
-        font-size: 25px;
+        font-size: 20px;
         padding: 0px 5px;
         padding-bottom: 5px;
         margin-top: none;
@@ -329,7 +302,6 @@ body {
     .scoreAndNext {
         width: 100vw;
         border: 2px solid #ac3131;
-
     }
 
     #option {
@@ -340,10 +312,14 @@ body {
 
     .btn {
         margin: 10px;
-        padding: 10px;
+        padding: 3px;
         margin-top: none;
     }
 
+    #result{
+        width: 250px;
+        height: 200px;
+    }
     /* #nextBtn{
         width: 65.89px;
         height: 62px;
@@ -379,15 +355,15 @@ body {
         margin: auto;
     }
 
-    .question {
+    .question{
         width: 70vw;
     }
 
-    .scoreAndNext {
+    .scoreAndNext{
         width: 70vw;
     }
 
-    .finish {
+    .finish{
         width: 70vw;
     }
 }
