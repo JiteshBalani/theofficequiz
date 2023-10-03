@@ -102,7 +102,7 @@ body {
 
 .quiz-heading {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 5px;
 }
@@ -128,6 +128,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0px;
 }
 
 .btn {
@@ -135,6 +136,7 @@ body {
     max-width: 300px;
     min-width: 260px;
     margin: 5px;
+    margin-top: none;
     padding: 10px;
     border-radius: 5px;
     font-size: 20px;
@@ -216,8 +218,6 @@ body {
     border: #ac3131 5px solid;
     border-radius: 10px;
     padding-bottom: 15px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
 }
 
 .finish h1 {
@@ -275,7 +275,7 @@ body {
     .question {
         /* display: block; */
         width: 100vw;
-        height: 70vh;
+        height: 75vh;
         margin: none;
         border: 2px solid #ac3131;
 
@@ -296,6 +296,7 @@ body {
         font-size: 25px;
         padding: 0px 5px;
         padding-bottom: 5px;
+        margin-top: none;
     }
 
     .scoreAndNext {
@@ -307,11 +308,13 @@ body {
     #option {
         width: 80%;
         font-size: 15px;
+        margin-top: none;
     }
 
     .btn {
         margin: 10px;
-        padding: 15px;
+        padding: 10px;
+        margin-top: none;
     }
 
     /* #nextBtn{
@@ -347,5 +350,17 @@ body {
     .contestant {
         width: 100%;
         margin: auto;
+    }
+
+    .question{
+        width: 70vw;
+    }
+
+    .scoreAndNext{
+        width: 70vw;
+    }
+
+    .finish{
+        width: 70vw;
     }
 }
