@@ -220,6 +220,7 @@ body {
     border: #ac3131 5px solid;
     border-radius: 10px;
     padding-bottom: 15px;
+    max-width: 960px;
 }
 
 .finish h1 {
