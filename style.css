@@ -278,6 +278,7 @@ body {
         height: 75vh;
         margin: none;
         border: 2px solid #ac3131;
+        padding-bottom: 5px;
 
     }
 
@@ -300,7 +301,9 @@ body {
     }
 
     .scoreAndNext {
+        flex-direction: column;
         justify-content: space-evenly;
+        padding-top:;
         width: 100vw;
         border: 2px solid #ac3131;
     }
