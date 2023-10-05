@@ -98,6 +98,7 @@ body {
     padding-bottom: 15px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    max-width: 960px;
 }
 
 .quiz-heading {
@@ -164,6 +165,7 @@ body {
     margin: none;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
+    max-width: 960px;
 }
 
 .scoreAndNext h2 {
